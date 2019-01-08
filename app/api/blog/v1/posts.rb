@@ -29,10 +29,8 @@ module Blog
         # handle post request
         desc 'creates a post'
         params do
-          requires :post, type: Hash do
-            requires :title, type: String, desc: 'Title'
-            requires :content, type: String, desc: 'Content'
-          end
+          requires :title, type: String, desc: 'Title'
+          requires :content, type: String, desc: 'Content'
         end
         post do
           @post = Post.create!(params)
@@ -41,54 +39,55 @@ module Blog
         # handle put request
         desc 'updates a post'
         params do
-          requires :post, type: Hash do
-            optional :title, type: String, desc: 'Title'
-            optional :content, type: String, desc: 'Content'
-          end
+          requires :id, type: Integer, desc: 'ID'
+          optional :title, type: String, desc: 'Title'
+          optional :content, type: String, desc: 'Content'
         end
-        put do
+        put '/:id' do
           @post = Post.find(params[:id])
           @post.update!(params)
         end
 
         # handle delete request
         desc 'deletes a post'
-        route_param :id
-        delete do
-          Post.destroy(params[:id])
+        params do
+          requires :id
         end
-      end
+        delete '/:id' do
+          post = Post.find(params[:id])
+          if post.destroy
+            status 204
+          else
+            present :errors
+          end
+        end
 
-      # assign comment as resource
-      resource :comments do
         # handle post request
         desc 'creates a comment'
         params do
-          requires :comment, type: Hash do
-            requires :post_id, type: Integer, desc: "Post ID"
-            requires :body, type: String, desc: 'Body'
-          end
+          requires :body, type: String, desc: 'Body'
         end
-        post do
-
+        post '/:post_id' do
+          Comment.create!(params)
         end
 
-        # handle put request
+        # handle put request for comments
         desc 'updates a comment'
         params do
-          requires :comment, type: Hash do
-            optional :body, type: String, desc: 'Body'
-          end
+          requires :id, type: Integer, desc: 'ID'
+          optional :body, type: String, desc: 'Body'
         end
-        put do
+        put '/:post_id/comment/:id' do
           @comment = Comment.find(params[:id])
           @comment.update(params)
         end
 
-        # handles delete request
+        # handles delete request for comments
         desc 'deletes a comment'
-        route_param :id
-        delete do
+        params do
+          requires :id, type: Integer, desc: 'ID'
+        end
+        delete ':post_id/comment/:id' do
           Comment.destroy(params[:id])
         end
       end
