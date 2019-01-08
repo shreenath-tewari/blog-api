@@ -2,7 +2,7 @@ module Blog
   # invoke version
   module V1
     # invoke class
-    class Post < Grape::API
+    class Posts < Grape::API
       # initialisation properties
       version 'v1'
       format :json
@@ -19,18 +19,19 @@ module Blog
 
         # handle show request
         desc 'returns a specific post'
-        route_param :id
-        get do
-          post = Post.find(params[:id])
-          present post, with: Blog::Entities::Post
+        route_param :id do
+          get do
+            post = Post.find(params[:id])
+            present post, with: Blog::Entities::Post
+          end
         end
 
         # handle post request
         desc 'creates a post'
         params do
           requires :post, type: Hash do
-            requires :title, type: string, desc: 'Title'
-            requires :content, type: string, desc: 'Content'
+            requires :title, type: String, desc: 'Title'
+            requires :content, type: String, desc: 'Content'
           end
         end
         post do
@@ -41,8 +42,8 @@ module Blog
         desc 'updates a post'
         params do
           requires :post, type: Hash do
-            optional :title, type: string, desc: 'Title'
-            optional :content, type: string, desc: 'Content'
+            optional :title, type: String, desc: 'Title'
+            optional :content, type: String, desc: 'Content'
           end
         end
         put do
@@ -55,6 +56,10 @@ module Blog
         delete do
           Post.destroy(params[:id])
         end
+      end
+
+      # assign comment as resource
+      resource :comments do
       end
     end
   end
