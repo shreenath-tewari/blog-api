@@ -47,7 +47,8 @@ module Blog
           end
         end
         put do
-          @post = Post.update!(params)
+          @post = Post.find(params[:id])
+          @post.update!(params)
         end
 
         # handle delete request
@@ -60,6 +61,36 @@ module Blog
 
       # assign comment as resource
       resource :comments do
+        # handle post request
+        desc 'creates a comment'
+        params do
+          requires :comment, type: Hash do
+            requires :post_id, type: Integer, desc: "Post ID"
+            requires :body, type: String, desc: 'Body'
+          end
+        end
+        post do
+
+        end
+
+        # handle put request
+        desc 'updates a comment'
+        params do
+          requires :comment, type: Hash do
+            optional :body, type: String, desc: 'Body'
+          end
+        end
+        put do
+          @comment = Comment.find(params[:id])
+          @comment.update(params)
+        end
+
+        # handles delete request
+        desc 'deletes a comment'
+        route_param :id
+        delete do
+          Comment.destroy(params[:id])
+        end
       end
     end
   end
