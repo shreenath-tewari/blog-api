@@ -187,10 +187,10 @@ DEPENDENCIES
   byebug
   devise
   devise-jwt
-  faker (~> 1.9, >= 1.9.1)
-  grape (~> 1.2, >= 1.2.2)
-  grape-entity (~> 0.7.1)
-  grape_on_rails_routes (~> 0.3.2)
+  faker
+  grape
+  grape-entity
+  grape_on_rails_routes
   jwt (~> 2.1)
   listen (~> 3.0.5)
   puma (~> 3.0)
