@@ -26,10 +26,10 @@ gem 'puma', '~> 3.0'
 # gem 'rack-cors'
 
 # gems for api
-gem 'grape'
-gem 'grape-entity'
-gem 'grape_on_rails_routes'
-gem 'faker'
+gem 'grape', '~> 1.2', '>= 1.2.2'
+gem 'grape-entity', '~> 0.7.1'
+gem 'grape_on_rails_routes', '~> 0.3.2'
+gem 'faker', '~> 1.9', '>= 1.9.1'
 
 # devise for authentication
 gem 'jwt', '~> 2.1'
