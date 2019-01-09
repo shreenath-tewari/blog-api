@@ -185,8 +185,8 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  devise (~> 4.5)
-  devise-jwt (~> 0.5.8)
+  devise
+  devise-jwt
   faker (~> 1.9, >= 1.9.1)
   grape (~> 1.2, >= 1.2.2)
   grape-entity (~> 0.7.1)

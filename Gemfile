@@ -33,8 +33,8 @@ gem 'faker', '~> 1.9', '>= 1.9.1'
 
 # devise for authentication
 gem 'jwt', '~> 2.1'
-gem 'devise', '~> 4.5'
-gem 'devise-jwt', '~> 0.5.8'
+gem 'devise'
+gem 'devise-jwt'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
