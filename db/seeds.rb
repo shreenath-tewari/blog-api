@@ -18,10 +18,13 @@ Comment.destroy_all
   )
 end
 
+user_ids = User.ids
+
 20.times do
   Post.create!(
           title: Faker::Book.title,
-          content: Faker::Lorem.sentence
+          content: Faker::Lorem.sentence,
+          user_id: user_ids.sample
   )
 end
 
@@ -30,6 +33,7 @@ post_ids = Post.ids
 50.times do
   Comment.create!(
              post_id: post_ids.sample,
-             body: Faker::Lorem.word
+             body: Faker::Lorem.word,
+             user_id: user_ids.sample
   )
 end
