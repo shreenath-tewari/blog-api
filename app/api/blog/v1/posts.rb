@@ -10,11 +10,14 @@ module Blog
 
       # assign post as resource
       resource :posts do
+        # invoke helpers
+        helpers Blog::V1::Helpers::AuthenticationHelper
+
         # handle index requests
         desc 'returns a list of all posts'
         get do
           posts = Post.all
-          present posts, with: Blog::Entities::Index
+          present posts, with: Blog::V1::Entities::Index
         end
 
         # handle show request
@@ -22,7 +25,7 @@ module Blog
         route_param :id do
           get do
             post = Post.find(params[:id])
-            present post, with: Blog::Entities::Post
+            present post, with: Blog::V1::Entities::Post
           end
         end
 
@@ -33,7 +36,16 @@ module Blog
           requires :content, type: String, desc: 'Content'
         end
         post do
-          @post = Post.create!(params)
+          present authenticated
+          # if authenticated
+          #   @post = Post.new(title: params[:title], content: params[:content], user_id: current_user)
+          #   if @post.save!
+          #     present @post
+          #   end
+          # else
+          #   error = { "error": "Authentication Failed! Please Login" }
+          #   present error
+          # end
         end
 
         # handle put request

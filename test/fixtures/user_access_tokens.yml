@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  access_token: MyText
+  active: false
+  user: one
+
+two:
+  access_token: MyText
+  active: false
+  user: two

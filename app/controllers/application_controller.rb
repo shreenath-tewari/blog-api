@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::API
+  respond_to :json
+
   # list of helper methods
   def render_resource(resource)
     if resource.errors.empty?
@@ -14,7 +16,8 @@ class ApplicationController < ActionController::API
             {
                 status: '400',
                 title: 'Bad Request',
-                detail: resource.errors
+                detail: resource.errors,
+                code: '100'
             }, status: :bad_request
         ]
     }

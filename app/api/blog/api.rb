@@ -1,3 +1,3 @@
 class API < Grape::API
-  mount Blog::V1::Posts
+  mount Blog::V1::Root
 end
