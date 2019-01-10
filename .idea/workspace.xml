@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7000d58-d61d-4ad8-a63e-8a2a56e03ad5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/api/blog/v1/entities/user.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/blog/v1/helpers/authentication_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/blog/v1/root.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/blog/v1/users.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/command/authenticate_user.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/jwt_web_token.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/529cc313-afd0-4d02-889c-a1d1f0f90807.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/529cc313-afd0-4d02-889c-a1d1f0f90807.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/blog/api.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/blog/api.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/blog/entities/comment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/blog/v1/entities/comment.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/blog/entities/index.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/blog/v1/entities/index.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/blog/entities/post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/blog/v1/entities/post.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/blog/v1/exception_handler.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/blog/v1/exception_handler.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/blog/v1/helpers/authentication_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/blog/v1/helpers/authentication_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/blog/v1/posts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/blog/v1/posts.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190109031045_create_jwt_blacklists.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190109031045_create_jwt_blacklists.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -70,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/api/blog/v1/users.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+            <state relative-caret-position="41">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -97,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/api/blog/v1/posts.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="153">
+              <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -130,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/api/blog/v1/helpers/authentication_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="78" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="78" />
+            <state relative-caret-position="211">
+              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -148,7 +132,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="das://529cc313-afd0-4d02-889c-a1d1f0f90807/schema/main/table/jwt_blacklist">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
@@ -213,10 +197,10 @@
         <option value="$PROJECT_DIR$/app/command/authenticate_user.rb" />
         <option value="$PROJECT_DIR$/app/lib/jwt_web_token.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/api/blog/v1/users.rb" />
         <option value="$PROJECT_DIR$/app/api/blog/v1/entities/user.rb" />
-        <option value="$PROJECT_DIR$/app/api/blog/v1/helpers/authentication_helper.rb" />
+        <option value="$PROJECT_DIR$/app/api/blog/v1/users.rb" />
         <option value="$PROJECT_DIR$/app/api/blog/v1/posts.rb" />
+        <option value="$PROJECT_DIR$/app/api/blog/v1/helpers/authentication_helper.rb" />
       </list>
     </option>
   </component>
@@ -236,7 +220,7 @@
         <observation name="false" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="false" value="106.0" />
+        <observation name="false" value="112.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:liftShorterClasses">
@@ -247,7 +231,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:middleMatching">
@@ -260,7 +244,7 @@
         <observation name="true" value="1.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="false" value="104.0" />
+        <observation name="false" value="110.0" />
         <observation name="true" value="2.0" />
       </dailyData>
     </factor>
@@ -272,7 +256,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_inResolveScope">
@@ -285,8 +269,8 @@
         <observation name="true" value="116.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="78.0" />
-        <observation name="true" value="28.0" />
+        <observation name="UNDEFINED" value="82.0" />
+        <observation name="true" value="30.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_openedInEditor">
@@ -300,8 +284,8 @@
         <observation name="true" value="24.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="78.0" />
-        <observation name="false" value="24.0" />
+        <observation name="UNDEFINED" value="82.0" />
+        <observation name="false" value="26.0" />
         <observation name="true" value="4.0" />
       </dailyData>
     </factor>
@@ -317,8 +301,8 @@
         <observation name="true" value="26.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="78.0" />
-        <observation name="false" value="25.0" />
+        <observation name="UNDEFINED" value="82.0" />
+        <observation name="false" value="27.0" />
         <observation name="true" value="3.0" />
       </dailyData>
     </factor>
@@ -332,8 +316,8 @@
         <observation name="false" value="116.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="78.0" />
-        <observation name="false" value="28.0" />
+        <observation name="UNDEFINED" value="82.0" />
+        <observation name="false" value="30.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sdkOrLibrary">
@@ -348,9 +332,9 @@
         <observation name="true" value="45.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="78.0" />
+        <observation name="UNDEFINED" value="82.0" />
         <observation name="false" value="20.0" />
-        <observation name="true" value="8.0" />
+        <observation name="true" value="10.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:templates">
@@ -363,7 +347,7 @@
         <observation name="true" value="9.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="false" value="102.0" />
+        <observation name="false" value="108.0" />
         <observation name="true" value="4.0" />
       </dailyData>
     </factor>
@@ -375,7 +359,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:expectedType">
@@ -386,7 +370,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:kind">
@@ -397,7 +381,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
@@ -408,7 +392,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_javaInheritance">
@@ -419,7 +403,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_referenceList">
@@ -430,7 +414,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:recursion">
@@ -441,7 +425,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="completionFinishedType">
@@ -456,9 +440,9 @@
         <observation name="typedSelect" value="267.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="cancelled" value="920.0" />
-        <observation name="explicitSelect" value="37.0" />
-        <observation name="typedSelect" value="69.0" />
+        <observation name="cancelled" value="999.0" />
+        <observation name="explicitSelect" value="39.0" />
+        <observation name="typedSelect" value="73.0" />
       </dailyData>
     </factor>
     <factor id="completionType">
@@ -469,7 +453,7 @@
         <observation name="BASIC" value="711.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="BASIC" value="256.0" />
+        <observation name="BASIC" value="273.0" />
       </dailyData>
     </factor>
     <factor id="completionUsage">
@@ -480,7 +464,7 @@
         <observation name="count" value="2474.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="count" value="1026.0" />
+        <observation name="count" value="1111.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
@@ -500,7 +484,7 @@
       </dailyData>
       <dailyData date="10-01-2019">
         <observation name="average" value="0.0" />
-        <observation name="count" value="211.0" />
+        <observation name="count" value="223.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -523,7 +507,7 @@
       </dailyData>
       <dailyData date="10-01-2019">
         <observation name="average" value="0.0" />
-        <observation name="count" value="211.0" />
+        <observation name="count" value="223.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -537,7 +521,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:nameEnd">
@@ -548,7 +532,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:position">
@@ -567,11 +551,11 @@
         <observation name="variance" value="0.058722" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="average" value="0.085308" />
-        <observation name="count" value="211.0" />
+        <observation name="average" value="0.080717" />
+        <observation name="count" value="223.0" />
         <observation name="max" value="2.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="0.092017" />
+        <observation name="variance" value="0.089699" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prefix">
@@ -590,11 +574,11 @@
         <observation name="variance" value="8908.839542" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="average" value="-1122.516588" />
-        <observation name="count" value="211.0" />
+        <observation name="average" value="-1124.147982" />
+        <observation name="count" value="223.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-1155.0" />
-        <observation name="variance" value="12869.341138" />
+        <observation name="variance" value="12542.661472" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:priority">
@@ -613,11 +597,11 @@
         <observation name="variance" value="160674.851526" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="average" value="-321.2891" />
-        <observation name="count" value="211.0" />
+        <observation name="average" value="-318.609865" />
+        <observation name="count" value="223.0" />
         <observation name="max" value="120.0" />
         <observation name="min" value="-1000.0" />
-        <observation name="variance" value="165033.090592" />
+        <observation name="variance" value="164628.753909" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_explicitlyImported">
@@ -628,7 +612,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_knownElement">
@@ -639,7 +623,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_sameModule">
@@ -660,12 +644,12 @@
         <observation name="variance" value="0.642974" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="78.0" />
-        <observation name="average" value="0.654545" />
-        <observation name="count" value="55.0" />
+        <observation name="UNDEFINED" value="82.0" />
+        <observation name="average" value="0.610169" />
+        <observation name="count" value="59.0" />
         <observation name="max" value="2.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="0.627595" />
+        <observation name="variance" value="0.619555" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_samePsiMember">
@@ -676,7 +660,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:query_length">
@@ -696,7 +680,7 @@
       </dailyData>
       <dailyData date="10-01-2019">
         <observation name="average" value="0.0" />
-        <observation name="count" value="211.0" />
+        <observation name="count" value="223.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -718,11 +702,11 @@
         <observation name="variance" value="12.011614" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="average" value="6.578199" />
-        <observation name="count" value="211.0" />
+        <observation name="average" value="6.520179" />
+        <observation name="count" value="223.0" />
         <observation name="max" value="20.0" />
         <observation name="min" value="1.0" />
-        <observation name="variance" value="14.430923" />
+        <observation name="variance" value="14.407082" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sameWords">
@@ -733,7 +717,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:shorter">
@@ -744,7 +728,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:simple">
@@ -755,7 +739,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sorter">
@@ -775,7 +759,7 @@
       </dailyData>
       <dailyData date="10-01-2019">
         <observation name="average" value="1.0" />
-        <observation name="count" value="211.0" />
+        <observation name="count" value="223.0" />
         <observation name="max" value="1.0" />
         <observation name="min" value="1.0" />
         <observation name="variance" value="0.0" />
@@ -789,7 +773,7 @@
         <observation name="UNDEFINED" value="350.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="UNDEFINED" value="106.0" />
+        <observation name="UNDEFINED" value="112.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:stats">
@@ -808,11 +792,11 @@
         <observation name="variance" value="21371221.563841" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="average" value="4434.805687" />
-        <observation name="count" value="211.0" />
+        <observation name="average" value="4464.089686" />
+        <observation name="count" value="223.0" />
         <observation name="max" value="10000.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="20191188.96243" />
+        <observation name="variance" value="20319790.199606" />
       </dailyData>
     </factor>
     <factor id="itemPosition">
@@ -826,7 +810,7 @@
         <observation name="2" value="2.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="0" value="32.0" />
+        <observation name="0" value="34.0" />
         <observation name="1" value="3.0" />
         <observation name="2" value="2.0" />
       </dailyData>
@@ -841,7 +825,7 @@
         <observation name="withMnemonics" value="1.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="total" value="32.0" />
+        <observation name="total" value="34.0" />
         <observation name="withMnemonics" value="2.0" />
       </dailyData>
     </factor>
@@ -870,8 +854,8 @@
         <observation name="1" value="4.0" />
         <observation name="2" value="8.0" />
         <observation name="3" value="12.0" />
-        <observation name="4" value="7.0" />
-        <observation name="5" value="1.0" />
+        <observation name="4" value="8.0" />
+        <observation name="5" value="2.0" />
         <observation name="6" value="3.0" />
         <observation name="9" value="1.0" />
       </dailyData>
@@ -886,8 +870,8 @@
         <observation name="count" value="1593.0" />
       </dailyData>
       <dailyData date="10-01-2019">
-        <observation name="average" value="287.775551" />
-        <observation name="count" value="499.0" />
+        <observation name="average" value="290.865385" />
+        <observation name="count" value="520.0" />
       </dailyData>
     </factor>
   </component>
@@ -1136,17 +1120,18 @@
       <workItem from="1547011148122" duration="584000" />
       <workItem from="1547011767106" duration="22641000" />
       <workItem from="1547052244275" duration="3803000" />
-      <workItem from="1547094320764" duration="17451000" />
+      <workItem from="1547094320764" duration="18564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64345000" />
+    <option name="totallyTimeSpent" value="65458000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20726173" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20726173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1398,17 +1383,24 @@
     <entry file="file://$PROJECT_DIR$/app/models/user_access_token.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/jwt_web_token.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/api/blog/v1/entities/post.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://529cc313-afd0-4d02-889c-a1d1f0f90807/schema/main/table/user_access_tokens">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://529cc313-afd0-4d02-889c-a1d1f0f90807/schema/main/table/jwt_blacklist">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1419,10 +1411,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://529cc313-afd0-4d02-889c-a1d1f0f90807/schema/main/table/user_access_tokens">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/app/lib/jwt_web_token.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -1435,15 +1427,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/api/blog/v1/users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        <state relative-caret-position="41">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/api/blog/v1/posts.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="153">
+          <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1456,15 +1448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/api/blog/v1/helpers/authentication_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="78" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://529cc313-afd0-4d02-889c-a1d1f0f90807/schema/main/table/jwt_blacklist">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+        <state relative-caret-position="211">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
         </state>
       </provider>
     </entry>

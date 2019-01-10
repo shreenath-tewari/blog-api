@@ -36,16 +36,15 @@ module Blog
           requires :content, type: String, desc: 'Content'
         end
         post do
-          present authenticated
-          # if authenticated
-          #   @post = Post.new(title: params[:title], content: params[:content], user_id: current_user)
-          #   if @post.save!
-          #     present @post
-          #   end
-          # else
-          #   error = { "error": "Authentication Failed! Please Login" }
-          #   present error
-          # end
+          if authenticated
+            @post = Post.new(title: params[:title], content: params[:content], user_id: current_user_id)
+            if @post.save!
+              present @post
+            end
+          else
+            error = { "error": "Authentication Failed! Please Login" }
+            present error
+          end
         end
 
         # handle put request
