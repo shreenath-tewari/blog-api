@@ -55,9 +55,19 @@ module Blog
           optional :content, type: String, desc: 'Content'
         end
         put '/:id' do
-          @post = Post.find(params[:id])
-          @post.update!(params)
-        end
+          if authenticated
+            @post = Post.find(params[:id])
+            if current_user_id == @post.user_id
+              @post.update!(params)
+            else
+              error = { "error": "Authorization Failed! You are not the author of the Post" }
+              present error
+            end
+          else
+            error = { "error": "Authentication Failed! Please Login" }
+            present error
+          end
+        end 
 
         # handle delete request
         desc 'deletes a post'
@@ -65,11 +75,21 @@ module Blog
           requires :id
         end
         delete '/:id' do
-          post = Post.find(params[:id])
-          if post.destroy
-            status 204
+          if authenticated
+            post = Post.find(params[:id])
+            if current_user == post.user_id
+              if post.destroy
+                status 204
+              else
+                present :errors
+              end
+            else
+              error = { "error": "Authorization Failed! You are not the author of the Post" }
+              present error
+            end
           else
-            present :errors
+            error = { "error": "Authentication Failed! Please Login" }
+            present error
           end
         end
 
