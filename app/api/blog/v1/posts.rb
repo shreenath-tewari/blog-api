@@ -99,7 +99,12 @@ module Blog
           requires :body, type: String, desc: 'Body'
         end
         post '/:post_id' do
-          Comment.create!(params)
+          if authenticated
+            Comment.create!(params)
+          else
+            error = { "error": "Authentication Failed! Please Login" }
+            present error
+          end
         end
 
         # handle put request for comments
@@ -109,8 +114,18 @@ module Blog
           optional :body, type: String, desc: 'Body'
         end
         put '/:post_id/comment/:id' do
-          @comment = Comment.find(params[:id])
-          @comment.update(params)
+          if authenticated
+            @comment = Comment.find(params[:id])
+            if current_user_id == @comment.user_id
+              @comment.update(params)
+            else
+              error = { "error": "Authorization Failed! You are not the author of the Post" }
+              present error
+            end
+          else
+            error = { "error": "Authentication Failed! Please Login" }
+            present error
+          end
         end
 
         # handles delete request for comments
@@ -119,7 +134,18 @@ module Blog
           requires :id, type: Integer, desc: 'ID'
         end
         delete ':post_id/comment/:id' do
-          Comment.destroy(params[:id])
+          if authenticated
+            @comment = Comment.find(params[:id])
+            if current_user_id == @comment.user_id
+              @comment.destroy(params[:id])
+            else
+              error = { "error": "Authorization Failed! You are not the author of the Post" }
+              present error
+            end
+          else
+            error = { "error": "Authentication Failed! Please Login" }
+            present error
+          end
         end
       end
     end
