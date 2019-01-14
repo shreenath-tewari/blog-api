@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7000d58-d61d-4ad8-a63e-8a2a56e03ad5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/api/blog/v1/posts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/blog/v1/posts.rb" afterDir="false" />
-    </list>
+    <list default="true" id="b7000d58-d61d-4ad8-a63e-8a2a56e03ad5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />
@@ -1118,12 +1116,12 @@
       <workItem from="1547011148122" duration="584000" />
       <workItem from="1547011767106" duration="22641000" />
       <workItem from="1547052244275" duration="3803000" />
-      <workItem from="1547094320764" duration="19221000" />
+      <workItem from="1547094320764" duration="19258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66115000" />
+    <option name="totallyTimeSpent" value="66152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
